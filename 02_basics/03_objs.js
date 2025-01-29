@@ -17,7 +17,7 @@ obj2.rollno=8;
 console.log(obj2);
 
 
-//3.it is same like 1st way
+//3.it is same like 1st way also called as : OBJECT LITERALS
 
 const jsUser={
     name:"shivam",

@@ -114,4 +114,25 @@ console.log(mulTwoNOs(2,3));
 
 const DivTwoNOs=(num1,num2) => ( num1/num2);
   console.log(DivTwoNOs(10,2));
+  console.log();
+
+  //we can directly declare a object inside a arrow fn(didnt covered by hitesh this example did using gpt)//we can simillary pass arr into arrow fn
+  
+  const val=()=>({
+    username:"shivam",
+    id:5,
+    printId:function(){
+        console.log(this.id);
+    }
+  })
+  const USER=val();
+  USER.printId();
+
+  //in above example we can have a question that how we are able to call printId function using a USER variable:
+  
+  /*
+  an:
+  The reason you're able to call printId() using the user variable is because the val() function returns an object, 
+   and that object contains the printId method as one of its properties
+   */
   

@@ -99,3 +99,19 @@ const wish3 = () => {
     console.log(this);////it will give undefined this.username format can be only used with objects
 }
 wish3();
+
+console.log();
+
+//now lets see how syntactical diffrences comes when we return something in a arrow function
+
+//1.
+const mulTwoNOs=(num1,num2) => {
+  return num1*num2;
+}
+console.log(mulTwoNOs(2,3));
+
+//2.here no need to write return keyword it automatically understands that the value after computation need to be returned
+
+const DivTwoNOs=(num1,num2) => ( num1/num2);
+  console.log(DivTwoNOs(10,2));
+  

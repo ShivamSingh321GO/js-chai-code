@@ -2,7 +2,7 @@
 const accountId=6765;
 let accountEmail="shivamsingh@gmail.com";
 var accountPassword="2324";
-accountCity="jaipur";//it is also a way to declare a variable but it is recommned to use this kind of declaration
+accountCity="jaipur";//(var keywrd type variable )it is also a way to declare a variable but it is recommned to use this kind of declaration
 
 let accountstate;
 
@@ -18,4 +18,4 @@ accountEmail="hc@hc.com";
 accountPassword="342";
 accountCity="bengaluru";
 
-console.table([accountId,accountEmail,accountPassword,accountCity.accountstate]);//this syntax will print all the varibles in a table
+console.table([accountId,accountEmail,accountPassword,accountCity,accountstate]);//this syntax will print all the varibles in a table

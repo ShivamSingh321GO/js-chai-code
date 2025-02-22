@@ -53,4 +53,4 @@ functions
 
 console.log(typeof(age));
 console.log(typeof(undefined));//output will be undfined
-console.log(typeof(null));//output will be object
+console.log(typeof(null));//output will be object (but we know that null is primitive type then how can it be object so it is due it issue in javasciptr)

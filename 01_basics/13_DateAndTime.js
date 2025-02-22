@@ -15,15 +15,21 @@ console.log(typeof(myDate));
 //lets see how can we create out own date 
 //Note: all the time are given in milisconds in java script
 
-let myCreatedDate=new Date(2023,0,23);//this formal followed in other countires where 0 represent month jan
+let myCreatedDate=new Date(2023,0,23);//this format followed in other countires where 0 represent month jan
 console.log(myCreatedDate.toDateString());
 
-let myCreatedDate2=new Date("2023-01-14");//this formal followed in other countires where 0 represent month jan
+let myCreatedDate2=new Date("2023-01-14");//this format followed in other countires where 01 represent month jan
 console.log(myCreatedDate2.toDateString())
 
 
 let myCreatedDate3=new Date("01-14-2023");//usualy we use this format here 01 represents the jan month
 console.log(myCreatedDate2.toDateString())
+
+//comparing dates
+let myTimeStamp=Date.now();//Returns the current timestamp in milliseconds since January 1, 1970 (Unix Epoch).
+console.log(myTimeStamp);
+console.log(myCreatedDate3.getTime());//.getTime() gives the timestamp of "01-14-2023" in milliseconds.
+
 
 let newDate=new Date();
 console.log(newDate);

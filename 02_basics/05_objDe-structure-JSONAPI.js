@@ -30,7 +30,7 @@ const{courseInstrucotr}=course;
 console.log(courseInstrucotr);//we can directly use course courseInstructor 
 
 //the more easy way to destructure is
-const{courseInstrucotr:instructor}=course;//we have shorten the  key name so that we can easily write it to print it
+const{courseInstrucotr:instructor}=course;//we have shorten the  key name OR modified it in shorter ,so that we can easily write it to print it
 console.log(instructor);
 console.log();
 
@@ -45,7 +45,7 @@ navbar(company="shivam");
 
 //JSON API
 
-//json is also kind of lines of js code but in json file which is used to give a API response in json file type example:
+//json is also kind of lines of js code in object form or array form but in json file which is used to give a API response in json file type example:
 
 //1.json file values stored in  a obj:
 // {

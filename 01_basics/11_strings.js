@@ -14,7 +14,7 @@ console.log(`Hello my nameis ${name} and my repo count is ${repoCount}`);//this 
 const gameName=new String('valorant');
 
 console.log(gameName[0]);
-console.log(gameName.__proto__);//using this we can see the object gamename prototype usually we can see it on a browser
+console.log(gameName.__proto__);//using this we can see the object gamename prototype( what functions does it have or inherits from other objects) usually we can see it on a browser
 
 //in browser if we see prototype of gameName string in browser we can see all the functions we can use for strings
 
@@ -36,12 +36,12 @@ console.log(newStr);
 const anotherStr=gameName.slice(-8,4);
 console.log(anotherStr);
 
-//slice and substring does same thing used to extract some part of the string but the key diffrence substring does accept negative indices but slice fn accepts it
+//slice and substring does same thing used to extract some part of the string but the key diffrence is substring does accept negative indices but slice fn accepts it
 
 
 const newstrOne=" shivam ";
 console.log(newstrOne);
-console.log(newstrOne.trim());
+console.log(newstrOne.trim());//spacers got trimed
 
 
 const url="https://shivam.com/shivam%20singh";

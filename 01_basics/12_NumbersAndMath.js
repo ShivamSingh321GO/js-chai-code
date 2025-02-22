@@ -10,7 +10,7 @@ const balance =new Number(100);//object of Number
 console.log(balance);
 
 console.log(balance.toString());
-console.log(typeof(balance));
+console.log(typeof(balance));//since  balance is created using new keyword it will considered as object
 console.log(balance.toString().length);
 console.log(balance.toFixed(2));//it will give more precised value like zeroes after the decimal
 
@@ -29,7 +29,7 @@ console.log(Math.ceil((4.3)));
 console.log(Math.floor((5.6)));
 
 console.log(Math.random());//it gives random values from range 0 to 1;
-//if we want to get the random values as per our desired range so then we need to derive our formula for it
+//if we want to get the random values as per our desired range so then we need to derive our formula for it//see hitesh video for this part
 
 console.log((Math.random() * 10) + 1);//this formula will not give values less than one
 console.log(Math.floor((Math.random() * 10) + 1));//this formula will not give values less than one and will give precise floor value 

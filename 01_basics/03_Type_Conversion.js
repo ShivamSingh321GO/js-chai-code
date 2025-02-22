@@ -9,12 +9,14 @@ console.log(typeof(scoreInString));//output: string
 console.log(scoreInString);//score will be converted into string
 
 console.log();
-//2.number to float
+
+//2.number to Boolean
 let score2=1;
 
 let scoreInBool=Boolean(score2);
 console.log(typeof(scoreInBool));
 console.log(scoreInBool);
+
 
 console.log();
 //string to others
@@ -61,7 +63,7 @@ console.log();
 
 let scoreString=String(scoreBool);
 console.log(typeof(scoreString));//string
-console.log(scoreString);
+console.log(scoreString);//false output 
 
 console.log()
 

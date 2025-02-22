@@ -11,7 +11,7 @@ obj.rolln0=5;
 console.log(obj);
 
 //2.
-const obj2=Object.create(null);//This is also correct. You're creating an object obj2 without any prototype (i.e., it doesn't inherit from Object.prototype).
+const obj2=Object.create(null);//This is also correct. You're creating an object obj2 without any prototype (i.e., it doesn't inherit from Object.prototype also dont inherit methods from its prototype objects).
 obj2.name="rahul";
 obj2.rollno=8;
 console.log(obj2);
@@ -67,7 +67,7 @@ const jsUser3={
     name:"piysuh",
     age:18,
     email:"piyush@chatgpt.com",
-
+ 
 }
 
 jsUser3.greeting=function(){

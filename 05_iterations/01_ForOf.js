@@ -44,7 +44,7 @@ for(const [key,val] of map){
 
 //ex:4: when for of loop used on objectsL
 
-//we cant use for of loop on objects because for of loop is designed to work with iterable objects like arrays, maps, and sets, not plain objects.
+//we cant use for of loop on objects literals because for of loop is designed to work with iterable objects like arrays, maps, and sets, not plain objects.
 
 // const myObj={
 

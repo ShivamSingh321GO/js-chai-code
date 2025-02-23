@@ -24,6 +24,7 @@ map.forEach(function(val){
 
 //using arrow fn as callback fn for foreach method
 
+//while working with foreach in maps we have to pass the first argument as value and second is key
 map.forEach((val, key) => {
     console.log(`${key} value is ${val} `);
 });
@@ -40,7 +41,7 @@ progLang.forEach((item,index,arr)=>{
 })
 console.log();
 
-//ex3: for each loop on objects sotred into a array
+//ex3: for each loop on objects stored into a array(imp example)
 
 const language=[
     {

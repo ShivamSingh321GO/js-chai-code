@@ -84,7 +84,7 @@ value=null?? 10 ??20;
 
 console.log(value);
 
-//tereneary operators: they are diffrent from NULLISH COALESCING
+//ternary operators: they are diffrent from NULLISH COALESCING
 
 //sysntax :  condtion ? true : false;
 

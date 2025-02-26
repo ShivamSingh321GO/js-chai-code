@@ -9,16 +9,38 @@
 </head>
 <body style="background-color: #212121; color:#fff">
     <div class="parent">
-        <div class="parent">Monday</div>
-        <div class="parent">Tuesday</div>
-        <div class="parent">Wednesday</div>
-        <div class="parent">Thursday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thusday</div>
     </div>
 </body>
 <script>
-    const parent=document.querySelector('.parent')
-    console.log(parent);
+     const parent=document.querySelector('.parent');
+    //  console.log(parent);
+    //  console.log(parent.children);
+    //  console.log(parent.children[1].innerHTML);
+
+
+     //getting values of children by applying loop on htmlcollection
+    //  for(let i=0; i < parent.children.length; i++){
+    //       console.log(parent.children[i].innerHTML);
+    //  }
     
-    
+    //using parent we are accessing children
+    parent.children[1].style.color='green';
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    //using a child we can access to parent
+    const day1=document.querySelector('.day');
+    console.log(day1);
+    console.log(day1.parentElement);
+
+    //we can also go to the next sibling of the child
+    console.log(day1.nextElementSibling);
+
+    //checking how many nodes we have between parent and child
+    console.log("Nodes: ",parent.childNodes );
 </script>
 </html>

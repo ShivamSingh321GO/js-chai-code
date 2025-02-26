@@ -1,52 +1,34 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Creating Elements</title>
 </head>
 <body style="background-color: #212121; color: white;">
-    <ul class="language">
-        <li>javascript</li>
-    </ul>
-</body>
 
-<script>
-    function addLang(langName){
-        const li=document.createElement('li');
-        li.innerHTML=`${langName}`;
-        document.querySelector('.language').appendChild(li);
-    }
-    addLang("python");
-    addLang("typescript");
-
-    //optimize way to add items
-    function addLangOpti(langName){
-        const li=document.createElement('li');
-        li.appendChild(document.createTextNode(langName));
-        document.querySelector('.language').appendChild(li);
-    }
-    addLangOpti('GoLang');
-
-
-    //Edit values
-    const secondLang= document.querySelector("li:nth-child(2)");
     
-    //secondLang.innerHTML="Mojo"(it is a bit slow method )method 1
-    //method 2
-    const newLang=document.createElement('li');
-    newLang.textContent="Mojo";
-    secondLang.replaceWith(newLang);
+</body>
+<script>
+        //creating element
+        const div=document.createElement('div');
+        console.log(div);
+         div.className='main';
+        //  div.id='myId'
+        div.id= (Math.round(Math.random() * 10+1));
 
-    //edit(Method 3)
-    const firstLang=document.querySelector("li:first-child");
-    firstLang.outerHTML='<li>Typescript</li>';
+        div.setAttribute('title', 'title generated');
+        div.style.backgroundColor='green';
+        div.style.padding='12px';
+
+        // div.innerText="Created Elements";(1st way to addtext but not optimized) 
+
+        const addtext=document.createTextNode("created Element");//Method 2: optimized way to add text
+        div.appendChild(addtext);
 
 
-    //remove 
-    const lastLang=document.querySelector('li:last-child');
-    lastLang.remove();
+        //now following we are making the element content to be visible on out webpage
+        document.body.appendChild(div); 
+
 </script>
 </html>

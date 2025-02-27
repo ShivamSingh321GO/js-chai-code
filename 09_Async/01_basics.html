@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js</title>
+</head>
+<body>
+    <h1>Learnning Async</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+       
+       function changeText(){
+        document.querySelector('h1').innerHTML="Learning Async in Js";
+       }
+
+       const changeTextfn= setTimeout(changeText,2000);
+
+       //use of clearTimeout for stopping the timeout set by setTimeout
+       //if the stop button is pressed before 2sec the text of h1 will not be changed
+       document.querySelector("#stop").
+       addEventListener('click',function(){
+           clearTimeout(changeTextfn);
+           console.log('Timeout stopped');
+       })
+
+       
+</script>
+</html>

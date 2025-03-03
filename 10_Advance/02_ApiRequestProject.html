@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white; text-align: center;">
+     
+    <!-- we need to make card which shows the profile of a github user url and his profile and his name by
+      clicking a button write a code for it , hitesh told us to do it by yourself.
+     -->
+  
+  
+    
+
+    <h2>Github User Profile</h2>
+
+    <!--button to show contents-->
+    <button id="btn">Get Profile</button>
+    
+    <!--Area or a card where the contents will be shown-->
+    <div id="card"></div>
+
+    <!--script to make an api call-->
+    <script>
+        //selecting the button so that by clicking event the card will be shown
+        document.querySelector("#btn").addEventListener('click',fetchGithubUser);
+       
+        //getting desired data from api call
+        function fetchGithubUser(){
+            const xhr=new XMLHttpRequest();
+            const requestUrl='https://api.github.com/users/hiteshchoudhary';
+
+            xhr.open('GET', requestUrl);
+
+            //defining what to do when a request is recieved
+            xhr.onreadystatechange=function(){
+               if(xhr.readyState==4){
+                  const data=JSON.parse(this.responseText);
+
+                  const profileImg=data.avatar_url;
+                  const followers=data.followers;
+                  const userName=data.name;
+
+                //   console.log("user:", userName, "Followers:", followers);
+
+                  document.getElementById('card').innerHTML=`
+                    <div style="
+                      background: #333;
+                      padding:20px;
+                      border-radius: 10px;
+                      display:inline-block; -- use of Inline-block:  When you need inline elements with set width & height (e.g., buttons, cards, menu items).
+                      box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+                      text-align:center;
+                      margin-top:20px;
+                    ">
+                     
+                     <img src="${profileImg}" alt="Profile Image" style="width: 100px; border-radius: 50%; margin-bottom: 10px;">
+                    
+                     
+                     <h3>${userName}</h3>
+                     <p>Followers: ${followers}</p>
+
+                    </div>
+                  `
+               }
+            }
+
+            xhr.send();
+        }
+    </script>
+</body>
+</html>

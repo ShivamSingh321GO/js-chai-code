@@ -19,11 +19,14 @@
 </body>
 
 <script>
-    
+    //NOTE: learn more about the XMLHttp api request from mdn docs
+
+
+
     const Xhr=new XMLHttpRequest();
     
     const requestUrl='https://api.github.com/users/ShivamSingh321GO';
-    Xhr.open('GET',requestUrl);
+    Xhr.open('GET',requestUrl,true);//here true means : the api call will be asynchronous and by default is also Asynchronous , but if we set it false the api call will be synchronous and will block the callstack therfore it is not recommended learn more about it from chatgpt
     Xhr.onreadystatechange=function(){
         console.log(Xhr.readyState);
         if(Xhr.readyState==4){

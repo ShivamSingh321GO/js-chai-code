@@ -1,0 +1,46 @@
+
+//1st buit user by me
+const promise2=new Promise(function(resolve, reject){
+
+    setTimeout(function(){
+         resolve({userName:"chai", emai:'chai@example.com'})
+    },1000);
+})
+
+promise2.then(function(user){
+    console.log(user);
+    
+})
+
+
+
+console.log();
+
+
+//real promise using fetch fn.
+fetch('https://api.github.com/users/ShivamSingh321GO')
+     .then((response)=>{
+        return response.json();
+     })
+     .then((data)=>{
+        console.log(data);
+        
+     })
+     .catch((err) =>{
+        console.log(err);
+     })
+    
+     
+     /**
+     NoTE: 1.Here the thing to notice is that the data from fetch fn. is printed first compared to the promise made by me, 
+            also the promise made by me written at the top of the fetch fn promise.
+            
+            2.it is happening because we studied in namastey js that there two queues one is task queue(callback queue) and one 
+            is message queue , the message queue has higher priority than task queue.
+
+            3.message queue only takes the functions of fetch api and task queue takes setTimeout and other apis functions,
+              therefore due to  higher priority of the fetchAPI method its data is printed first compared to promise resolved
+              using setTimeout fn.
+            
+
+      */

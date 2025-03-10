@@ -12,7 +12,7 @@ const descripter=Object.getOwnPropertyDescriptor(Math, "PI");//this function giv
 console.log(descripter);
 
 
-// lets see with help of a example how we can change that objects property value so that we break that lock of a constant 
+// lets see with help of a example how we can change that objects property value so that we break that lock of a constant ( Creating an Object and Checking Its Property Descriptors)
 const books={
     name:'lust stories',
     price:300,
@@ -26,12 +26,15 @@ const books={
 
 console.log(Object.getOwnPropertyDescriptor(books, "name"));
 
+// Modifying the name Property to Make It Immutable
 
 Object.defineProperty(books,'name',{
     writable:false,//making writable property false so that any one cant change the value of false
     enumerable:false   //making enumerable false we cant acess name property when we iterate over it using loop(if we make it true we can acess it)
 })
 console.log(Object.getOwnPropertyDescriptor(books,'name'));
+
+// Trying to Change the name Property:
 
 for(let [key,value] of Object.entries(books)){
 

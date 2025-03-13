@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    // document.getElementById('orange').onclick=function(){
+    //     document.body.style.backgroundColor='orange'
+    // }
+    // document.getElementById('green').onclick=function(){
+    //     document.body.style.backgroundColor='green'
+    // }
+
+    //this above methods works when we work with two or three buttons on page
+    //but what if we want to put 100 buttons on page we need to write document.getElement syntax for 100 times which dont
+    //  follows DRY in programming
+</script>
+
+
+<script>
+    //this file demonstrates real life example of how lexical scoping can be used in real life projects
+
+    function clickHandler(color){
+       // document.body.style.backgroundColor=`${color}`
+        return function (){
+              document.body.style.backgroundColor=`${color}`;
+        }
+    }
+    document.getElementById("orange").onclick=clickHandler("orange");
+    document.getElementById("green").onclick=clickHandler("green")
+</script>
+</html>

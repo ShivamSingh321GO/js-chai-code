@@ -29,6 +29,7 @@
 </script>
 
 <script>
+    //this method of handling the click event using onclick keyword now longer is used , instead we use addEventListener
     //    document.getElementById('owl').onclick=function(){
     //        alert('owl clicked');
     //    }
@@ -44,7 +45,7 @@
     //     console.log(' owl clicked ');
     // },false)
 
-    //2.capturing when : third parameter is false:
+    //2.capturing when : third parameter is true:
 
     // document.getElementById('images').addEventListener('click',function(e){
     //     console.log('clicked insdie the ul');
@@ -60,7 +61,7 @@
     // },false)
     // document.getElementById('owl').addEventListener('click',function(e){
     //     console.log(' owl clicked ');
-    //      e.stopPropagation();//using this apna event bubble ho ke upar ke elements pe nhi jaayga
+    //      e.stopPropagation();//using this fn, event bubble ho ke upar ke elements pe nhi jaayga
     // },false)
 
   //preventDefault: it stops the default action of the event : for example here if we have clicked to google it would have took us to google engine this is default event , so we have stoped it and printed a value google clicked:

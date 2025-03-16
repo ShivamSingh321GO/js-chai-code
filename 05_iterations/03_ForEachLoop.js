@@ -9,13 +9,6 @@ in the callback function.
 
 //EX1: for each loop on maps:
 
-const map=new Map();
-map.set('IN',"India")
-map.set('US',"united states")
-map.set('FR',"France")
-map.set('US',"united states");//duplicates not allowed into a map
-
-console.log(map);
 
 //using normal fn as callback fn to the to the foreach method
 map.forEach(function(val){

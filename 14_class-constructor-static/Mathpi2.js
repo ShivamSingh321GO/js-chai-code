@@ -24,10 +24,11 @@ console.log(Math.PI);
  NOTE : so conclusion is that : 
  1. Math.PI is read-only (writable: false).
  2.Math.PI is non-configurable (configurable: false), so Object.defineProperty() cannot modify it.
+ 3.therefore using proopterty descriptor we cant change the value of pi 
  
 */
 
-//NOTE: You cannot change the value of Math.PI, but you can create your own variable.
+//NOTE: You cannot change the value of Math.PI, but you can create your own variable to change its value .
 
 let myPi=Math.PI;
 console.log(myPi);

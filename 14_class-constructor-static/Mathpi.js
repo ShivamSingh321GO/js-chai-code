@@ -1,6 +1,6 @@
 
 
-//this is the named now you know objects video:
+//this is contect of video  named: now you know objects video:
 
 //In this part we are able to clearly see how we cant change the value of a object property as it is internally locked by js so that , that property remains constant
 // console.log(Math.PI);

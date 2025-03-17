@@ -22,7 +22,7 @@ When an object is created using a constructor function, it inherits from the con
 
 
 
-//use of this keyword:(content from hitesh notes file)
+//use of this keyword:(these below contents are from hitesh notes file):
 
 
 /*see all these explanation with help of example from gpt for better understanding: 

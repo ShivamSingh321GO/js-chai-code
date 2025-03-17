@@ -10,8 +10,6 @@ const user={
     getUserDetails:function(){
         // console.log('Got  user details from database');
         console.log(`userName ${this.userName}`);
-        
-        
     }
 }
 

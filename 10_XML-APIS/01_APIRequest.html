@@ -31,8 +31,8 @@
         console.log(Xhr.readyState);
         if(Xhr.readyState==4){
             // console.log(this.responseText);
-            const data=JSON.parse(this.responseText);
-            console.log(data.followers);//data will be in string form therefore convert it into json obj
+            const data=JSON.parse(this.responseText);//data obje response will be in string form  therefore convert it into json obj
+            console.log(data.followers);
             //followers will be 0 in the output
         }
     }

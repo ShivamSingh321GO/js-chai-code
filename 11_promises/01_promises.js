@@ -34,12 +34,13 @@
 const promise2=new Promise(function(resolve, reject){
 
     setTimeout(function(){
+        console.log("hello");
+        
          resolve({userName:"chai", emai:'chai@example.com'})
     },1000);
 })
 
 promise2.then(function(user){
     console.log(user);
-    
 })
 

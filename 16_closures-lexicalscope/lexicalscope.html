@@ -27,6 +27,10 @@
 <script>
     //this file demonstrates real life example of how lexical scoping can be used in real life projects
 
+    //here we dont have   TO DRY  our code therefor we stored the content which changes the background color into a seprate function and
+    //we are using it again and again for different buttons who need to change its colour
+    
+
     function clickHandler(color){
        // document.body.style.backgroundColor=`${color}`
         return function (){
